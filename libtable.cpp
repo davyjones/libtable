@@ -1,6 +1,6 @@
 #include "libtable_p.h"
 
-Table::Table()
+Table::Table(QWidget* parent)
     : d_ptr(new TablePrivate)
 {
     Q_D(Table);
@@ -9,6 +9,7 @@ Table::Table()
 
     setCentralWidget(d->table_view);
     statusBar();
+    setParent(parent);
 }
 
 void TablePrivate::init()
