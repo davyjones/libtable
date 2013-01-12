@@ -16,7 +16,7 @@ protected:
     TablePrivate* const d_ptr;
 
 public:
-    Table();
+    Table(QWidget *parent = 0);
     //Table(QTextStream);
 
     QStandardItemModel* model() const;
